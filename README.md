@@ -1,5 +1,4 @@
 <h1>End - End Project</h1>
-</br>
 <h2>Problem Statement</h2>
 <p>Considering the intensifying threat of terrorist attacks, the indispensable requirement for 
 analysing, understanding and interpreting the multi-dimensional obstacles inflicted by the terrorist 
@@ -14,10 +13,23 @@ observations.</p>
 </br>
 <h2>Phase 1 Analysis of Data</h2>
 <h3>Preprocessing</h3>
-</br>
 <p>The process of locating and fixing or removing errors and inconsistencies from datasets is 
 known as data cleaning, sometimes known as data cleansing or data preparation. It entails getting 
 the data ready for analysis by making sure it is correct, comprehensive, and formatted correctly. 
 Data cleaning encompasses a variety of tasks, including:</p>
+<p>
+1. Data investigation: 
+2. Features Selection: 
+3. Handling Missing data:  
+4. Handling Duplicate values: 
+5. Handling Null Values: 
+6. Handling Non-Positive values: 
+7. Column integration: 
+8.Handling inconsistent data: 
+9. Renaming Columns: 
+10. Sorting column and Reset index: 
+
+</p>
 
 <h3>EDA</h3>
+
