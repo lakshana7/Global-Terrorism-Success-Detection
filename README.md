@@ -10,7 +10,7 @@ global scale. The ultimate goal is understand the repeated hidden trends that ha
 the past over the years 1970 to 2017 and then make some advanced predictions with observed 
 observations.</p>
 <h3>Dataset</h3>
-<a href="https://www.kaggle.com/datasets/START-UMD/gtd"></a>
+<a href="https://www.kaggle.com/datasets/START-UMD/gtd">Dataset Link</a>
 </br>
 <h2>Phase 1 Analysis of Data</h2>
 <h3>Preprocessing</h3>
