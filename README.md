@@ -17,19 +17,32 @@ observations.</p>
 known as data cleaning, sometimes known as data cleansing or data preparation. It entails getting 
 the data ready for analysis by making sure it is correct, comprehensive, and formatted correctly. 
 Data cleaning encompasses a variety of tasks, including:</p>
-<p>
-1. Data investigation: 
-2. Features Selection: 
-3. Handling Missing data:  
-4. Handling Duplicate values: 
-5. Handling Null Values: 
-6. Handling Non-Positive values: 
-7. Column integration: 
-8.Handling inconsistent data: 
-9. Renaming Columns: 
-10. Sorting column and Reset index: 
 
-</p>
 
+<ul>
+    <li>Data Investigation</li>
+    <li>Features Selection</li>
+    <li>Handling Missing Data</li>
+    <li>Handling Duplicate Values</li>
+    <li>Handling Null Values</li>
+    <li>Handling Non-Positive Values</li>
+    <li>Column Integration</li>
+    <li>Handling Inconsistent Data</li>
+    <li>Renaming Columns</li>
+    <li>Sorting Columns and Reset Index</li>
+</ul>
 <h3>EDA</h3>
+<ul>
+    <li>1. Univariant Analysis</li>
+    <li>2. Bivariate Analysis</li>
+    <li>3. Visualizing Attack Types Using Pie Chart</li>
+    <li>4. Visualizing Number of Killed and Wounded Per Year</li>
+    <li>5. Causality Display using Bar Graph</li>
+    <li>6. Crosstab Between Target Type and Weapon Type</li>
+    <li>7. Crosstab Analysis Between Attack Type and Weapon Type</li>
+    <li>8. Analyzing Attacks Year Wise</li>
+    <li>9. Visualizing Top 5 Countries and Cities</li>
+    <li>10. Examining Success Rate Year Wise</li>
+</ul>
+
 
