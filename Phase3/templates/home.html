@@ -1,0 +1,77 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 style="text-align:center;">Application Model for Global Terrorism Attack using Decision Tree</h1>
+<div class="train">
+	<h2>Click on the below button to train the model</h1>
+		<form id="train_model" action="/train_model" method="post">
+			<button id="train_model" type="submit">Train Model</button>
+			<div class="image-container">
+				<img src="{{ url_for('static', filename=image_path) }}" alt="Loading..." id="loading" style="display: none;">
+			</div>
+		</form>
+	</h2>
+</div>
+
+<script>
+	document.getElementById('train_model').onclick = function(event) {
+		event.preventDefault();
+		document.getElementById('loading').style.display = 'block';
+		var req = new XMLHttpRequest();
+		req.open('GET', '/train_model', true);
+		req.send();
+
+		req.onload = function() {
+			if (req.status == 200) {
+				var response = JSON.parse(req.responseText);
+				document.getElementById('loading').style.display = 'none';
+				alert(response.message);
+			} else {
+				alert('Error training the model');
+			}
+		};
+	};
+</script>
+
+<div class="container">
+	<div class="input-container">
+		<h1>Enter the data sample</h1>
+		<form action="/submit" method="post">
+			<label for="num_killed">Number of killed:</label>
+			<input type="text" id="num_killed" name="num_killed" placeholder="Enter the count of killed"><br><br>
+			
+			<label for="num_wounded">Number of wounded:</label>
+			<input type="text" id="num_wounded" name="num_wounded" placeholder="Enter the count of wounded"><br><br>
+			
+			<label for="num_hostkids">Number of Host kids:</label>
+			<input type="text" id="num_hostkids" name="num_hostkids" placeholder="Enter the count of host kids"><br><br>
+			
+			<label for="attacktype">Attack Type:</label>
+			<input type="text" id="attacktype" name="attacktype" placeholder="Enter the Attack type"><br><br>
+			
+			<label for="weapon_type">Weapon Type:</label>
+			<input type="text" id="weapon_type" name="weapon_type" placeholder="Enter the Weapon type"><br><br>
+			
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div class="input-container">
+		<h1>Upload a CSV File</h1>
+		<form action="/upload_csv" method="post" enctype="multipart/form-data">
+			<input type="file" name="csv_file" accept=".csv"><br><br>
+			
+			<input type="submit" value="Upload">
+		</form>
+	</div>
+
+</div>
+
+<footer>
+	<div id="authors">
+		<marquee>
+			<h5><font color=white><bold>BY</bold>&nbsp;-----&nbsp;&nbsp;&nbsp;Sai Savithru Mohan Pishka (saisavit), Lakshana Kundan (lkundan), Amanulla Shaik (ashaik5)</h5>
+		</marquee>
+	</div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block content %}
+
+<script>
+        window.onload = function() {
+            alert('Data sample(s) received, results generated!\n Please click Ok!!');
+        };
+</script>
+	
+<h1>Model Results</h1>
+	{% if datapoint %}
+		<div class="result">
+			<h3>Attack Type: {{ attacktype }}</h3>
+			<h3>Number of Wounded: {{ num_wounded }}</h3>
+			<h3>Number of Killed: {{ num_killed }}</h3>
+		</div>
+	{% endif %}
+	
+	{% if message %}
+		<p>{{ message }}</p>
+	{% endif %}
+  
+	{% if predictions or datapoint %}
+		<div class="predictions">
+			<h1>Bar Plot of 1s and 0s</h1>
+
+			<img src="{{ bar_img }}" alt="Bar Plot" />
+			<h2>Predictions:</h2>
+			<h4>{{ predictions }}</h4>
+			<div class="success">
+				<h2 style="color: red;">Number of Attack Success cases: {{ success_count }}</h2>
+			</div>
+			<h2 style="color: green;">Number of Attack Faliure cases: {{ fail_count }}</h2>
+			<h1>Pie Plot of Weapon Types</h1>
+
+			<img src="{{ pie_img }}" alt="Bar Plot" />
+			
+			<h2>Suggestions</h2>
+			{% if sug %}
+				<h4>{{ sug }}</h4>
+			{% else %}
+				<div class="result">
+					<h4>No specific measure, deploy more security forces, secuirty cameras.</h4>
+				</div>
+			{% endif %}
+		</div>
+	{% endif %}
+
+{% endblock %}

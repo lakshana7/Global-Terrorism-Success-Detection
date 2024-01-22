@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<style>
+			h1 {
+				text-align: center;
+				padding: 20px;
+			}
+			
+			.predictions {
+				text-align: center;
+				padding: 10px;
+			}
+			
+			.container {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin-top: 20px;
+			}
+			
+			.input-container {
+				width: 45%;
+				padding: 20px;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				box-sizing: border-box;
+			}
+			
+			#loading {
+				display: none;
+			}
+			
+			.train {
+				text-align: center;
+			}
+			
+			.image-container {
+				width: 200%;
+				margin: 0 auto;
+				text-align: center;
+				margin-left: 35%;
+			}
+			
+			.image-container img {
+				max-width: 200%;
+				height: auto;
+			}
+			
+			.input-container  h2 {
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			
+			.result {
+				padding-left: 20px;
+			}
+			
+			@keyframes blink {
+				0% { opacity: 1; }
+				50% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			
+			.success {
+				animation: blink 1s infinite;
+			}
+		</style>
+
+		<script>
+			function showAlert() {
+				alert('Attack was Success!');
+			}
+		</script>
+
+		<link
+    			rel="stylesheet"
+    			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    			crossorigin="anonymous"
+  		/>
+
+  		<link
+    			rel="stylesheet"
+    			type="text/css"
+    			href="{{ url_for('static',filename='style.css')}}"
+  		/>
+
+{% block content %} {% endblock %}
+	</head>
+</html>
