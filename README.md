@@ -45,4 +45,24 @@ Data cleaning encompasses a variety of tasks, including:</p>
     <li>10. Examining Success Rate Year Wise</li>
 </ul>
 
-
+<h2>Phase 2 Implementing Known ML Algorithms using SKlearn </h2>
+<p>Implemented 7 Algorithms namely:</p>
+<ol>
+    <li>Logistic Regression</li>
+    <li>SVM Classifier</li>
+    <li>K-means</li>
+    <li>K-NN</li>
+    <li>Random Forest</li>
+    <li>Decision Tree</li>
+    <li>Naive-Bayes Classifier </li>
+</ol>
+<h3>Conclusion</h3>
+<img src="1.png">
+<p>To conclude we have chosen 7 algorithms in total where 4 from the lectures and 3 out of 
+the lectures to explore the working of the algorithms. Out of all, decision tree classifier is our 
+best model for the problem statement which is explained in detail by the visualization of how its 
+classifies each class. This helps us the decisions makers in the real world to explore the impact of 
+each feature on the attack and thereby take necessary actions to mitigate similar attacks in the 
+future. Next best is the Random Forest algorithm which provides the same accuracy of the 
+decision tree. But considering other metrics, the performance decision tree is considered best for 
+classifying whether an attack is successful or not. </p>
